@@ -1,78 +1,87 @@
-Factorial Calculator in Python
+Fibonacci Series Generator in Python
 
 📌 Overview
 
-This project demonstrates how to calculate the factorial of a number using Python. It uses a "for" loop to multiply all positive integers from "1" to the given number.
+This project demonstrates how to generate the Fibonacci series using Python. The program uses a "for" loop and variable updates to print the first 10 terms of the sequence.
 
-🎯 Objective
+In the Fibonacci series, each number after the first two is the sum of the previous two numbers.
 
-To understand the basic concepts of Python programming, including:
+🎯 Objectives
 
-- Variables and initialization
-- "for" loops
-- Arithmetic operations
-- Displaying output using "print()"
+- Understand the Fibonacci sequence.
+- Learn how to use "for" loops in Python.
+- Practice variable initialization and updating.
+- Understand basic arithmetic operations and sequence generation.
 
 💻 Source Code
 
-n = 5
-fact = 1
+n = 10
+a = 0
+b = 1
 
-for i in range(1, n + 1):
-    fact = fact * i
+for i in range(n):
+    print(a, end=" ")
 
-print(fact)
+    next = a + b
+    a = b
+    b = next
 
 ⚙️ How It Works
 
-1. Initialize the number: Set "n = 5".
-2. Initialize the factorial: Set "fact = 1".
-3. Run the loop: The "for" loop iterates from "1" to "5".
-4. Calculate the factorial: Multiply "fact" by each value of "i".
-5. Display the result: Print the final factorial.
-
-Example Calculation
-
-The factorial of 5 is:
-
-"5! = 5 × 4 × 3 × 2 × 1 = 120"
+1. Initialize variables: "a = 0" and "b = 1" represent the first two Fibonacci numbers.
+2. Repeat the loop: "range(n)" runs the loop 10 times.
+3. Print the current term: The program prints the value of "a".
+4. Calculate the next term: Add "a" and "b" and store the result in "next".
+5. Update the variables: Assign "b" to "a" and "next" to "b".
+6. Continue: Repeat until all 10 terms have been printed.
 
 📤 Output
 
-120
+0 1 1 2 3 5 8 13 21 34
+
+🧮 Fibonacci Sequence
+
+The sequence begins with 0 and 1. Each subsequent number is calculated by adding the previous two numbers.
+
+For example:
+
+- 0 + 1 = 1
+- 1 + 1 = 2
+- 1 + 2 = 3
+- 2 + 3 = 5
 
 🛠️ Requirements
 
 - Python 3.x
-- Any Python editor, such as VS Code, PyCharm, or Google Colab
+- Any Python editor, such as VS Code, PyCharm, or Google Colab.
 
 No external libraries are required.
 
 ▶️ How to Run
 
-1. Clone or download this repository.
-2. Save the code in a file named "factorial.py".
-3. Open a terminal in the project directory.
-4. Run the following command:
+1. Copy the source code into a file named "fibonacci.py".
+2. Open a terminal in the project directory.
+3. Run the following command:
 
-python factorial.py
+python fibonacci.py
 
-Alternatively, execute the code directly in Google Colab.
+You can also execute the program directly in Google Colab.
 
 ⏱️ Complexity Analysis
 
 - Time Complexity: "O(n)" — the loop runs "n" times.
-- Space Complexity: "O(1)" — the program uses a constant amount of additional memory.
+- Auxiliary Space Complexity: "O(1)" — the algorithm uses a constant number of variables.
 
 🚀 Future Improvements
 
-- Accept input from the user.
-- Handle negative numbers and invalid inputs.
-- Calculate factorials of larger numbers.
+- Accept the number of terms from the user.
+- Add input validation for negative values.
+- Display each Fibonacci number on a separate line.
+- Extend the program to calculate the Fibonacci number at a specific position.
 
 📚 Concepts Covered
 
-Python basics, loops, variables, multiplication, factorials, and complexity analysis.
+Python variables, "for" loops, arithmetic operations, sequence generation, and time and space complexity.
 
 👨‍💻 Author
 
@@ -80,4 +89,4 @@ Created as a beginner-friendly Python programming exercise.
 
 ---
 
-⭐ If you found this project useful, consider giving the repository a star.
+⭐ If you find this project useful, consider giving the repository a star.
